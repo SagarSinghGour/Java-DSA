@@ -20,3 +20,17 @@ class Main {
         System.out.println(prime ? "Prime" : "Not Prime");
     }
 }
+
+//  2. Palindrome Number
+
+int n = 121;
+int original = n;
+int reverse = 0;
+
+while (n > 0) {
+    int digit = n % 10;
+    reverse = reverse * 10 + digit;
+    n /= 10;
+}
+
+System.out.println(original == reverse ? "Palindrome" : "Not Palindrome");
