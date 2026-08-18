@@ -34,3 +34,17 @@ while (n > 0) {
 }
 
 System.out.println(original == reverse ? "Palindrome" : "Not Palindrome");
+
+// 3. Armstrong Number. 
+
+int n = 153;
+int original = n;
+int sum = 0;
+
+while (n > 0) {
+    int digit = n % 10;
+    sum += digit * digit * digit;
+    n /= 10;
+}
+
+System.out.println(original == sum ? "Armstrong" : "Not Armstrong");
